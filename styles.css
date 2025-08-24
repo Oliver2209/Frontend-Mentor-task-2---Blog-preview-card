@@ -26,6 +26,11 @@ body {
     border: 1px solid hsl(0, 0%, 0%);
     border-radius: 20px;
     padding: 25px;
+    box-shadow: 7px 7px 0 hsl(0, 0%, 0%); /* need to dive deeper into box-shadow */
+}
+
+.wrapper > * {
+    margin-bottom: 15px;
 }
 
 .wrapper .main-image {
@@ -42,4 +47,43 @@ body {
     font-weight: 800;
     padding: 0.5em 1em;
     border-radius: 5px;
+}
+
+.wrapper p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 42%);
+    line-height: 1.5;
+}
+
+.wrapper .date {
+    color: hsl(0, 0%, 7%);
+}
+
+.wrapper h1 {
+    font-weight: 800;
+    font-size: 2.3rem;
+}
+
+.wrapper h1:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.wrapper .profile-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.wrapper .profile-name img {
+    object-fit: contain;
+    width: 12%;
+    margin-right: 10px; 
+}
+
+.wrapper .profile-name span {
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
 }
